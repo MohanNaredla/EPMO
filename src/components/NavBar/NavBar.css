@@ -1,0 +1,95 @@
+:root {
+    --primary: #1E1D26;
+    --secondary: #EDF1F3;
+    --button: #845BB3;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    padding: 60px 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    animation: fade-in 0.8s;
+}
+
+.navbar__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.navbar__title:hover {
+    opacity: 0.7;
+}
+
+.navbar__items {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-top: 13px;
+}
+
+.navbar__item {
+    margin-right: 45px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar__item:last-child {
+    background-color: #845BB3;
+    border-radius: 16px;
+    padding: 8px 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__item:last-child:hover {
+    filter:brightness(0.9);
+}
+
+.navbar__item::after {
+    content: "";
+    width: 120%;
+    height: 4px;
+    background-color: var(--button);
+    border-radius: 10px;
+    position: absolute;
+    left: -50%;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.4s;
+    pointer-events: none;
+}
+
+.navbar__item:hover::after {
+    opacity: 1;
+    left: -5px;
+}
+
+.navbar__item:last-child::after {
+    display: none;
+}
+
+
+.navlink__item {
+    color: var(--primary);
+    padding-bottom: 15px;
+}
+
+.navlink__item.button{
+    color: white;
+}
+
+
