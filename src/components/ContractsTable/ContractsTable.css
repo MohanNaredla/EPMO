@@ -1,0 +1,68 @@
+:root {
+    --accent: #845BB3;
+}
+
+@keyframes fade-table{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contracts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contracts__table {
+    width: 100%;
+    border-collapse: separate;
+    border-radius: 10px;
+    border-spacing: 0;
+    margin: 25px 0;
+    font-size: 0.9rem;
+    margin: 15px 34px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    animation: fade-table 0.8s 0.2s backwards;
+}
+
+
+.contracts__table thead tr {
+    background-color: var(--accent);
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+}
+
+.contracts__table th, 
+.contracts__table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.contracts__table th:nth-child(1) {
+    border-radius: 9px 0 0 0;
+}
+
+.contracts__table th:last-child {
+    border-radius: 0 9px 0 0;
+}
+
+.contracts__table tbody tr {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+}
+
+.contracts__table tbody tr:hover {
+    transform: scale(1.001);
+    color: var(--accent);
+    font-weight: 800;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}

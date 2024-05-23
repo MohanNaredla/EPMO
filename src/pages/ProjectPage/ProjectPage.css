@@ -1,0 +1,4 @@
+.project-page {
+    width: calc(100% - 75px);
+    transform: translateX(75px);
+}

@@ -14,10 +14,22 @@
 }
 
 body {
-  background-color: #F4F4F4;
+  background-color: #EDF1F3;
 }
 
 .App {
   width: 100vw;
   height: 100vh;
+  display: flex;
+}
+
+input {
+  font: inherit;
+  border: none;
+}
+
+button {
+  border: none;
+  background-color: initial;
+  outline: none;
 }
