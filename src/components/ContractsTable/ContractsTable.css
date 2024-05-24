@@ -2,7 +2,7 @@
     --accent: #845BB3;
 }
 
-@keyframes fade-table{
+@keyframes fade-table-c{
     from {
         opacity: 0;
         transform: translateY(100px);
@@ -30,7 +30,7 @@
     margin: 15px 34px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
     overflow-y: scroll;
-    animation: fade-table 0.8s 0.2s backwards;
+    animation: fade-table-c 0.8s 0.3s backwards;
 }
 
 
@@ -65,4 +65,46 @@
     color: var(--accent);
     font-weight: 800;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contracts__table .a-chip {
+    background-color: #EBF9EF;
+    border-radius: 14px;
+    color: green;
+    max-width: fit-content;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.contracts__table .r-chip {
+    background-color: #ebf9f9;
+    border-radius: 14px;
+    color: #4F79CB;
+    max-width: fit-content;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.contracts__table .rp-chip {
+    background-color: #f9f9eb;
+    border-radius: 14px;
+    color: #BB925A;
+    max-width: fit-content;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.contracts__table .p-chip {
+    background-color: #f9ebeb;
+    border-radius: 14px;
+    color: #be4f4f;
+    max-width: fit-content;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.table__icon {
+    font-size: 12px;
+    color: #10181B;
+    font-weight: 800;
 }

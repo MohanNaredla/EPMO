@@ -27,7 +27,7 @@ const ProjectTable = () => {
             <td className='action-btn'><button><FontAwesomeIcon icon={faBars} /></button></td>
             <td className='view-btn'><button><FontAwesomeIcon icon={faEye} /></button></td>
             <td>Initiation Approved</td>
-            <td></td>
+            <td>N/A</td>
             <td>N/A</td>
             <td>PCC Review Approved</td>
             <td>N/A</td>
@@ -38,7 +38,7 @@ const ProjectTable = () => {
             <td className='action-btn'><button><FontAwesomeIcon icon={faBars} /></button></td>
             <td className='view-btn'><button><FontAwesomeIcon icon={faEye} /></button></td>
             <td>Initiation Approved</td>
-            <td></td>
+            <td>N/A</td>
             <td>N/A</td>
             <td>PCC Review Approved</td>
             <td>N/A</td>
@@ -49,7 +49,7 @@ const ProjectTable = () => {
             <td className='action-btn'><button><FontAwesomeIcon icon={faBars} /></button></td>
             <td className='view-btn'><button><FontAwesomeIcon icon={faEye} /></button></td>
             <td>Initiation</td>
-            <td></td>
+            <td>N/A</td>
             <td>N/A</td>
             <td>N/A</td>
             <td>N/A</td>
@@ -60,7 +60,7 @@ const ProjectTable = () => {
             <td className='action-btn'><button><FontAwesomeIcon icon={faBars} /></button></td>
             <td className='view-btn'><button><FontAwesomeIcon icon={faEye} /></button></td>
             <td>Initiation Approved</td>
-            <td></td>
+            <td>N/A</td>
             <td>N/A</td>
             <td>N/A</td>
             <td>N/A</td>
@@ -81,7 +81,7 @@ const ProjectTable = () => {
             <td>EmpowerAbility: Enhancing Accesibility and Inclusion for Persons with Disabilites</td>
             <td className='action-btn'><button><FontAwesomeIcon icon={faBars} /></button></td>
             <td className='view-btn'><button><FontAwesomeIcon icon={faEye} /></button></td>
-            <td></td>
+            <td>N/A</td>
             <td>Initiation</td>
             <td>05/28/2024</td>
             <td>EPMO Review Pending</td>
@@ -126,7 +126,7 @@ const ProjectTable = () => {
             <td className='action-btn'><button><FontAwesomeIcon icon={faBars} /></button></td>
             <td className='view-btn'><button><FontAwesomeIcon icon={faEye} /></button></td>
             <td>Initiation Approved</td>
-            <td></td>
+            <td>N/A</td>
             <td>06/26/2024</td>
             <td>EPMO Review Pending</td>
             <td>06/07/2024</td>

@@ -16,7 +16,7 @@ const CPHeader = (props) => {
             placeholder={`Search ${props.name}s`}
           />
           <button className="search__submit">
-            <FontAwesomeIcon icon={faSearch} className="search__icon"/>
+            <FontAwesomeIcon icon={faSearch} className="search__icon" />
           </button>
         </form>
         <button className="header__create">{`Start New ${props.name}`}</button>
