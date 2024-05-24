@@ -1,0 +1,23 @@
+@keyframes filter-animation-c {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contract-page {
+    width: calc(100% - 75px);
+    transform: translateX(75px);
+}
+
+.filters-container-c {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    animation: filter-animation-c 0.8s 0.2s backwards;
+}

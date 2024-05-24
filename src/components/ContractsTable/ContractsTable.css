@@ -1,0 +1,110 @@
+:root {
+    --accent: #845BB3;
+}
+
+@keyframes fade-table-c{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contracts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contracts__table {
+    width: 100%;
+    border-collapse: separate;
+    border-radius: 10px;
+    border-spacing: 0;
+    margin: 25px 0;
+    font-size: 0.9rem;
+    margin: 15px 34px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    animation: fade-table-c 0.8s 0.3s backwards;
+}
+
+
+.contracts__table thead tr {
+    background-color: var(--accent);
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+}
+
+.contracts__table th, 
+.contracts__table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.contracts__table th:nth-child(1) {
+    border-radius: 9px 0 0 0;
+}
+
+.contracts__table th:last-child {
+    border-radius: 0 9px 0 0;
+}
+
+.contracts__table tbody tr {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+}
+
+.contracts__table tbody tr:hover {
+    transform: scale(1.001);
+    color: var(--accent);
+    font-weight: 800;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contracts__table .a-chip {
+    background-color: #EBF9EF;
+    border-radius: 14px;
+    color: green;
+    max-width: fit-content;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.contracts__table .r-chip {
+    background-color: #ebf9f9;
+    border-radius: 14px;
+    color: #4F79CB;
+    max-width: fit-content;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.contracts__table .rp-chip {
+    background-color: #f9f9eb;
+    border-radius: 14px;
+    color: #BB925A;
+    max-width: fit-content;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.contracts__table .p-chip {
+    background-color: #f9ebeb;
+    border-radius: 14px;
+    color: #be4f4f;
+    max-width: fit-content;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.table__icon {
+    font-size: 12px;
+    color: #10181B;
+    font-weight: 800;
+}

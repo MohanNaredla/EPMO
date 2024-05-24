@@ -1,0 +1,69 @@
+:root {
+    --accent: #845BB3;
+}
+
+@keyframes fade-table{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.projects__table {
+    width: 100%;
+    border-collapse: separate;
+    border-radius: 10px;
+    border-spacing: 0;
+    margin: 25px 0;
+    font-size: 0.8rem;
+    margin: 15px 34px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    animation: fade-table 0.8s 0.2s backwards;
+}
+
+
+.projects__table thead tr {
+    background-color: var(--accent);
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+}
+
+.projects__table th, 
+.projects__table td {
+    padding: 17px 20px;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.projects__table th:nth-child(1) {
+    border-radius: 9px 0 0 0;
+}
+
+.projects__table th:last-child {
+    border-radius: 0 9px 0 0;
+}
+
+.projects__table tbody tr {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+}
+
+.projects__table tbody tr:hover {
+    transform: scale(1.001);
+    color: var(--accent);
+    font-weight: 800;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
