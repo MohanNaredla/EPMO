@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-import "./TableButton.css"
+import "./TableButton.css";
 
 const TableButton = (props) => {
   return (
