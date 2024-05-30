@@ -9,13 +9,26 @@
     }
 }
 
+@media  screen and (width > 1680px) {
+    .filters-container {
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media screen and (width < 350px) {
+    .contract-page {
+        transform: translateX(-69px) !important;
+    }
+}
+
 .contract-page {
-    width: calc(100% - 75px);
-    transform: translateX(75px);
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
 }
 
 .filters-container-c {
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
     margin-bottom: 80px;
     margin-top: 20px;

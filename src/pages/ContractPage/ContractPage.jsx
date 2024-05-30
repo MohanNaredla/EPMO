@@ -4,6 +4,7 @@ import CPHeader from "../../components/CPHeader/CPHeader";
 import ContractsTable from "../../components/ContractsTable/ContractsTable";
 import "./ContractPage.css";
 import Filter from "../../components/Filter/Filter";
+import ContractCard from "../../components/ContractCard/ContractCard";
 
 const ContractPage = () => {
   const contractType = [
@@ -32,6 +33,7 @@ const ContractPage = () => {
         <Filter title="Status Type" options={status} />
       </div>
       <ContractsTable />
+      <ContractCard amount="$41,000.00" status="Review Pending" number="328" user="Tom" type="Small Contract" stage="Draft"/>
     </div>
   );
 };

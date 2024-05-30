@@ -14,19 +14,21 @@
     }
 }
 
+
 .projects {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
 }
 
 .projects__table {
     width: 100%;
-    border-collapse: separate;
+    border-collapse: collapse;
     border-radius: 10px;
     border-spacing: 0;
     margin: 25px 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 15px 34px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
     overflow-y: scroll;
@@ -37,15 +39,15 @@
 .projects__table thead tr {
     background-color: var(--accent);
     color: #fff;
-    text-align: center;
+    text-align: left;
     font-weight: 800;
+    text-wrap: nowrap;
 }
 
 .projects__table th, 
 .projects__table td {
-    padding: 17px 20px;
-    text-align: center;
-    text-wrap: nowrap;
+    padding: 15px 18px;
+    text-align: left;
 }
 
 .projects__table th:nth-child(1) {
@@ -66,4 +68,15 @@
     color: var(--accent);
     font-weight: 800;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.center-text {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.center-text-c {
+    display: block;
+    text-align: center;
 }

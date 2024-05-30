@@ -11,7 +11,6 @@ function Filter(props) {
         options={props.options}
         placeholder={`Select ${props.title}`}
         isClearable
-        isMulti
         isSearchable={false}
         styles={{
           control: (base) => ({
@@ -47,17 +46,10 @@ function Filter(props) {
           }),
           option: (base, state) => ({
             ...base,
-            backgroundColor: state.isFocused ? "#845BB3" : "white",
-            color: state.isFocused ? "white" : "black",
+            backgroundColor: state.isFocused ? "#FAFAFA" : "white",
+            color: "black",
+            fontWeight: state.isFocused ? "600" : "500",
             margin: 0,
-          }),
-          singleValue: (base) => ({
-            ...base,
-            backgroundColor: "#845BB3",
-            color: "white",
-            borderRadius: "10px",
-            maxWidth: "fit-content",
-            padding: "2px 8px",
           }),
           clearIndicator: (base) => ({
             ...base,
@@ -65,33 +57,12 @@ function Filter(props) {
             margin: 0,
             transform: "translateX(12px)",
           }),
-          multiValue: (base) => ({
+          singleValue: (base) => ({
             ...base,
-            backgroundColor: "rgba(255, 255, 255, 0.3)",
-            border: "1px solid #ddd",
-            borderRadius: "10px",
+            fontSize: "17px",
+            fontWeight: "500",
             display: "flex",
             alignItems: "center",
-            paddingRight: "6px",
-          }),
-          multiValueLabel: (base) => ({
-            ...base,
-            fontSize: "16px",
-            marginRight: "4px",
-          }),
-          multiValueRemove: (base) => ({
-            ...base,
-            backgroundColor: "#9E9E9E",
-            color: "white",
-            borderRadius: "50%",
-            height: "50%",
-            padding: "0",
-            maxWidth: "fit-content",
-            "&:hover": {
-              backgroundColor: "grey",
-              color: "white",
-              borderRadius: "50%",
-            },
           }),
           valueContainer: (provided, state) => ({
             ...provided,

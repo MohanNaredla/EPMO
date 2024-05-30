@@ -9,13 +9,21 @@
     }
 }
 
+@media  screen and (width > 1680px) {
+    .filters-container {
+        flex-wrap: nowrap !important;
+    }
+}
+
 .project-page {
-    width: calc(100% - 75px);
-    transform: translateX(75px);
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 100%;
 }
 
 .filters-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
     margin-bottom: 60px;
     margin-top: 20px;

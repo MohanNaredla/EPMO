@@ -16,7 +16,6 @@ const ProjectPage = () => {
           <Filter title="Stage Type"/>
           <Filter title="Status Type"/>
           </div>
-          <ProjectTable />
         </div>
       );
 }

@@ -1,82 +1,182 @@
 :root {
-    --background: #10171A;
-    --accent: #845BB3;
-    --text: #555A5B;
-    --text-light: rgba(169, 180, 183, 0.5);
+  --background: #10171a;
+  --accent: #845bb3;
+  --text: #555a5b;
+  --text-light: rgba(169, 180, 183, 0.5);
 }
 
 @keyframes fade-header {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (width < 1100px) {
+  .search__input {
+    width: 335px !important;
+  }
+  .search__input:hover,
+  .search__input:focus {
+    width: 355px !important;
+  }
+}
+
+@media screen and (width < 900px) {
+  .search__input {
+    width: 235px !important;
+  }
+  .search__input:hover,
+  .search__input:focus {
+    width: 255px !important;
+  }
+}
+
+@media screen and (width < 740px) {
+  .search__input {
+    width: 175px !important;
+  }
+  .search__input:hover,
+  .search__input:focus {
+    width: 155px !important;
+  }
+  .search__submit {
+    top: 11px !important;
+  }
+}
+
+@media screen and (width < 660px) {
+  .header__title {
+    display: none !important;
+  }
+  .header__content {
+    width: 100% !important;
+    justify-content: space-between;
+    gap: 36px !important;
+  }
+  .search__input {
+    width: 235px !important;
+  }
+  .search__input:hover,
+  .search__input:focus {
+    width: 255px !important;
+  }
+}
+
+@media screen and (width < 585px) {
+  .header__content {
+    width: 100% !important;
+    justify-content: space-between;
+    gap: 36px !important;
+  }
+  .search__input {
+    width: 175px !important;
+  }
+  .search__input:hover,
+  .search__input:focus {
+    width: 185px !important;
+  }
+}
+
+@media screen and (width < 522px) {
+  .header__content {
+    width: 100% !important;
+    justify-content: flex-start;
+    margin-left: -39px;
+  }
+  .search__input {
+    display: none !important;
+  }
+  .search__submit {
+    display: none !important;
+  }
+  .header__create {
+    padding: 10px 20px !important;
+  }
+}
+
+@media screen and (width < 500px) {
+  .header__content {
+    margin-left: -49px !important;
+  }
+  .header {
+    margin-left: -10px !important;
+  }
 }
 
 .header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 100%;
-    padding: 60px 34px;
-    animation: fade-header 0.8s 0.1s backwards;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 60px 34px;
+  animation: fade-header 0.8s 0.1s backwards;
 }
 
 .header__title {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .header__content {
-    display: flex;
-    gap: 18px;
+  margin-top: 8px;
+  display: flex;
+  gap: 18px;
 }
 
 .search {
-    position: relative;
+  position: relative;
 }
 
 .search__input {
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 34px;
-    width: 405px;
-    border-radius: 500px;
-    font-size: 17px;
-    color: #555A5B;
-    padding-left: 20px;
-    outline: none;
-    transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 34px;
+  width: 405px;
+  border-radius: 500px;
+  font-size: 17px;
+  color: #555a5b;
+  padding-left: 20px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .search__input::placeholder {
-    color: var(--text-light);
+  color: var(--text-light);
 }
 
-.search__input:hover, 
+.search__input:hover,
 .search__input:focus {
-    width: 425px;
+  width: 425px;
 }
 
 .search__submit {
-    font-size: 15px;
-    color: var(--text-light);
-    cursor: pointer;
-    position: absolute;
-    right: 13px;
-    top: 8px;
+  font-size: 15px;
+  color: var(--text-light);
+  cursor: pointer;
+  position: absolute;
+  right: 13px;
+  top: 10px;
 }
 
 .search__submit:focus {
-    color: var(--text);
+  color: var(--text);
 }
 
 .header__create {
-    font-size: 15px;
-    background-color: var(--accent);
-    color: white;
-    padding: 0 20px;
-    border-radius: 500px;
+  font-size: 18px;
+  background-color: var(--accent);
+  color: white;
+  padding: 0 20px;
+  border-radius: 500px;
+  transition: all 0.3s ease-out;
+  text-wrap: nowrap;
+}
+
+.header__create:hover {
+  transform: scale(0.9);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
 }

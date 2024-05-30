@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,12 +22,12 @@ const SideBar = () => {
           <FontAwesomeIcon icon={faJoomla} />
         </NavLink>
         <ul className="navlink__items">
-          <li className="navbar__item">
+          <li className="navbar__item" >
             <NavLink exact to="/" className="navlink__item">
               <FontAwesomeIcon icon={faHouse} />
             </NavLink>
           </li>
-          <li className="navbar__item">
+          <li className="navbar__item" >
             <NavLink exact to="/projects" className="navlink__item">
               <FontAwesomeIcon icon={faFile} />
             </NavLink>

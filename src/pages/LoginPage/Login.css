@@ -16,6 +16,8 @@
 }
 
 .login {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +31,7 @@
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   max-width: 400px;
-  width: 120%;
+  width: 100%;
   height:40vh;
   animation: login-animation 0.8s 0.2s backwards;
 }
