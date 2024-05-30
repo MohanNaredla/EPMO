@@ -1,4 +1,15 @@
-@media screen and (width < 500px) {
+@keyframes card-animation {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (width < 570px) {
     .ccard {
         display: block !important;
     }
@@ -12,6 +23,7 @@
     padding: 15px;
     margin: 10px;
     display: none;
+    animation: card-animation 0.8s 0.3s backwards;
 }
 
 .ccard__title {
@@ -29,17 +41,6 @@
 
 .amount__value {
     font-size: 1.3rem;
-}
-
-.rp-chip-c {
-    background-color: #FCE8B5;
-    border-radius: 14px;
-    color: #BB925A;
-    padding: 6px;
-    font-weight: 600;
-    text-wrap: nowrap;
-    text-overflow: ellipsis;
-    margin-left: 50px;
 }
 
 .agreement-no {
@@ -73,3 +74,49 @@
 .title {
     color: rgba(0, 0, 0, 0.8);
 }
+
+.rp-chip-c {
+    background-color: #FCE8B5;
+    border-radius: 14px;
+    color: #BB925A;
+    padding: 6px;
+    font-weight: 600;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 50px;
+}
+
+.p-chip-c {
+    background-color: #efb2b2;
+    border-radius: 14px;
+    color: #be4f4f;
+    padding: 6px;
+    font-weight: 600;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 90px;
+}
+
+.r-chip-c {
+    background-color:  #adc8f5;
+    border-radius: 14px;
+    color: #265cc6;
+    padding: 6px;
+    font-weight: 600;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 90px;
+}
+
+.a-chip-c {
+    background-color: #c4f4d1;
+    border-radius: 14px;
+    color: green;
+    padding: 6px;
+    font-weight: 600;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 90px;
+}
+
+

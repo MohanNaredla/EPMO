@@ -14,16 +14,10 @@
     }
 }
 
-@media screen and (width < 500px) {
+@media screen and (width < 570px) {
     .contracts__table {
         display: none;
     }
-}
-
-@media screen and (width > 1500px) {
-    .contracts__table {
-        font-size: 1.2rem !important;
-     }
 }
 
 @media screen and (width > 2000px) {

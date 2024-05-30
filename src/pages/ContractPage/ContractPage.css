@@ -21,6 +21,15 @@
     }
 }
 
+@media screen and (width < 570px) {
+    .filters-container-c {
+        margin-bottom: 30px !important;
+    }
+    .table-buttons {
+        justify-content: start !important;
+    }
+}
+
 .contract-page {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
@@ -32,5 +41,14 @@
     justify-content: start;
     margin-bottom: 80px;
     margin-top: 20px;
+    animation: filter-animation-c 0.8s 0.2s backwards;
+}
+
+.table-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 34px;
+    margin-bottom: 8px;
     animation: filter-animation-c 0.8s 0.2s backwards;
 }

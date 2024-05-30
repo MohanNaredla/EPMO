@@ -59,6 +59,10 @@
         margin-bottom: 30px !important;
     }
 
+    .navbar__item {
+        padding: 10px 0 !important;
+    }
+
 }
 
 @media screen and (height > 1200px) {
@@ -86,6 +90,10 @@
 
     .navbar__header {
         font-size: 1.3rem !important;
+    }
+
+    .navbar__item {
+        padding: 10px 0 !important;
     }
 }
 
@@ -132,8 +140,13 @@
     width: 100%;
     font-size: 1.4rem;
     text-align: center;
+    padding: 15px 0;
 }
 
 .navlink__item {
     color: white;
+}
+
+.navbar__item:hover {
+    background-color: var(--accent);
 }

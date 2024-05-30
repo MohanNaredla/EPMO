@@ -1,0 +1,36 @@
+@media screen and (width < 570px) {
+    .light-buttons {
+        display: none !important;
+    }
+}
+
+.table-button {
+    background-color: #845BB3;
+    max-width: fit-content;
+    padding: 6px 12px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+.button-icon {
+    font-size: 0.8rem;
+    margin-right: 12px;
+}
+
+.light-buttons {
+    border: 1px solid #845BB3;
+    max-width: fit-content;
+    padding: 6px 12px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+.light-buttons span {
+    color: #845BB3;
+}
+
+span {
+    text-wrap: nowrap;
+}

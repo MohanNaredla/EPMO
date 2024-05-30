@@ -10,7 +10,7 @@ const ContractCard = (props) => {
                     <span className='amount__title'>Estimated Value</span>
                     <h3 className="amount__value">{props.amount}</h3>
                 </div>
-                <div className="rp-chip-c">{props.status}</div>
+                <div className={props.class}>{props.status}</div>
             </div>
             <div className="ccard__body">
                 <div className="agreement-no">
