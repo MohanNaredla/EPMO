@@ -15,9 +15,9 @@
     }
 }
 
-@media screen and (width < 350px) {
+@media screen and (width < 370px) {
     .contract-page {
-        transform: translateX(-69px) !important;
+        transform: translateX(-65px) !important;
     }
 }
 

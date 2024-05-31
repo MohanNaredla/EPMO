@@ -31,7 +31,7 @@ function Filter(props) {
           }),
           placeholder: (base) => ({
             ...base,
-            color: "rgba(169, 180, 183, 0.5)",
+            color: "rgba(0, 0, 0, 0.3)",
           }),
           menu: (base) => ({
             ...base,

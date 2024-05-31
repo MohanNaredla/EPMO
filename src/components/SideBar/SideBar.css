@@ -16,7 +16,7 @@
     }
 }
 
-@media screen and (width < 350px) {
+@media screen and (width < 370px) {
     .navbar {
         display: none !important;
     }

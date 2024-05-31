@@ -14,6 +14,24 @@
     }
 }
 
+@media screen and (width < 1200px) {
+    .project-name {
+        max-width: 15ch !important;
+    }
+    .approved-phase {
+        max-width: 10ch !important;
+    }
+    .pending-phase {
+        max-width: 10ch !important;
+    }
+    .cert {
+        max-width: 10ch !important;
+    }
+    .projects__table thead tr {
+        text-wrap: wrap !important;
+    }
+}
+
 
 .projects {
     width: 100%;
@@ -79,4 +97,36 @@
 .center-text-c {
     display: block;
     text-align: center;
+}
+
+.project-name {
+    display: block;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    max-width: 25ch;
+}
+
+.approved-phase {
+    display: block;
+    max-width: fit-content;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.pending-phase {
+    display: block;
+    max-width: fit-content;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.cert {
+    display: block;
+    max-width: fit-content;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }

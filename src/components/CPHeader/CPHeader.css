@@ -2,7 +2,7 @@
   --background: #10171a;
   --accent: #845bb3;
   --text: #555a5b;
-  --text-light: rgba(169, 180, 183, 0.5);
+  --text-light: rgba(0, 0, 0, 0.3);
 }
 
 @keyframes fade-header {

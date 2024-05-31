@@ -4,6 +4,13 @@
     }
 }
 
+@media screen and (500px < width < 570px){
+    .table-button {
+        margin-left: 34px !important;
+    }
+}
+
+
 .table-button {
     background-color: #845BB3;
     max-width: fit-content;

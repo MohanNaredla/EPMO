@@ -3,6 +3,7 @@
         opacity: 0;
         transform: translateY(100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -12,6 +13,22 @@
 @media screen and (width < 570px) {
     .ccard {
         display: block !important;
+    }
+}
+
+@media screen and (500px < width < 570px) {
+    .ccard {
+        margin-left: 34px !important;
+    }
+}
+
+@media screen and (410px < width < 570px) {
+    .ccard {
+        max-width: 100% !important;
+    }
+    .ccard__title {
+        max-width: 100% !important;
+        justify-content: space-between !important;
     }
 }
 
@@ -98,7 +115,7 @@
 }
 
 .r-chip-c {
-    background-color:  #adc8f5;
+    background-color: #adc8f5;
     border-radius: 14px;
     color: #265cc6;
     padding: 6px;
@@ -118,5 +135,3 @@
     text-overflow: ellipsis;
     margin-left: 90px;
 }
-
-
